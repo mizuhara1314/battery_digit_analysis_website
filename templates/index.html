@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电池数据分析器</title>
+    <link rel="stylesheet" href=".\static\style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>电池数据分析器</h1>
+        <form action="/generate_chart" method="post">
+            
+            <input type="submit" class="button" name="chart" value="生成充电容量与电压图">
+            <input type="submit" class="button" name="chart" value="生成放电容量与电流图">
+            <input type="submit" class="button" name="chart" value="生成充电容量与温度图">
+            <input type="submit" class="button" name="chart" value="生成容量衰减曲线图">
+            <input type="submit" class="button" name="chart" value="生成累积容量曲线图">
+            <input type="submit" class="button" name="chart" value="生成累积容量与总电压曲线图">
+            <input type="submit" class="button" name="chart" value="生成dQ/dV曲线图">
+            <input type="submit" class="button" name="chart" value="生成描述性统计信息">
+            <input type="submit" class="button" name="chart" value="生成相关性分析热图">
+            <input type="submit" class="button" name="chart" value="生成参数关系图">
+        
+           
+        </form>
+    </div>
+</body>
+</html>

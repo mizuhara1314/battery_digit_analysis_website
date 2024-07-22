@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <style>
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-gallery img {
+            width: 700px;
+            height: 700px;
+            margin: 5px;
+            border: 2px solid #ccc;
+            box-shadow: 2px 2px 12px #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>dQ/dV曲线图</h1>
+    <div class="image-gallery">
+        {% for image in images %}
+        <img src="{{ url_for('static', filename=image) }}" alt="Image">
+        {% endfor %}
+    </div>
+</body>
+</html>
